@@ -1,4 +1,4 @@
-#Dice Tower
+# Dice Tower
 
 The Dice Tower is a console program to roll dice for use in role playing games.
 
