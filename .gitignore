@@ -1,0 +1,8 @@
+*.sln 
+
+/.vs/*
+/x64/Debug/Dice Tower.pdb
+/Dice Roller/x64/*
+/Dice Roller/Dice Roller.vcxproj
+/Dice Roller/Dice Roller.vcxproj.filters
+/Dice Roller/Dice Roller.vcxproj.user
