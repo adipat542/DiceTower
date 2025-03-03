@@ -28,7 +28,6 @@ int main()
 		 << "# Enter \"quit\" or \"exit\" to exit the program              #\n"
 		 << "###########################################################\n" << endl;
 
-
 	while (rollStr != "quit" || rollStr != "exit")
 	{
 		cout << "What would you like to roll?" << endl;
