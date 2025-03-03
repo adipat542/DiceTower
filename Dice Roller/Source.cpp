@@ -11,6 +11,7 @@
 #include <string>
 #include <random>
 #include <ctime>
+#include <cctype>
 #include <windows.h>
 using namespace std;
 
@@ -28,14 +29,16 @@ int main()
 		 << "###########################################################\n" << endl;
 
 
-	while (rollStr != "quit" || rollStr != "Quit" || rollStr != "QUIT" || rollStr != "exit" || rollStr != "Exit" || rollStr != "EXIT")
+	while (rollStr != "quit" || rollStr != "exit")
 	{
 		cout << "What would you like to roll?" << endl;
 		cin >> rollStr;
 
+		transform(rollStr.begin(), rollStr.end(), rollStr.begin(), ::tolower);
+
 		try {
 
-			if (rollStr == "quit" || rollStr == "Quit" || rollStr == "QUIT" || rollStr == "exit" || rollStr == "Exit" || rollStr == "EXIT")
+			if (rollStr == "quit" || rollStr == "exit")
 			{
 				SetColor(3, 0);
 				cout << "\nHave a good day! : ^)" << endl;
