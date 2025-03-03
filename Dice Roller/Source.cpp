@@ -4,7 +4,7 @@
 // any specified amount of dice with any specified
 // amount of sides
 // Created by: Aditya Pathak
-// Last updated: 2/4/2025
+// Last updated: 3/2/2025
 **************************************************/
 
 #include <iostream>
@@ -26,6 +26,7 @@ int main()
 		 << "# Ex: 1d100 would roll 1 dice with 100 sides              #\n" 
 		 << "# Enter \"quit\" or \"exit\" to exit the program              #\n"
 		 << "###########################################################\n" << endl;
+
 
 	while (rollStr != "quit" || rollStr != "Quit" || rollStr != "QUIT" || rollStr != "exit" || rollStr != "Exit" || rollStr != "EXIT")
 	{
@@ -139,6 +140,7 @@ int main()
 
 	return 0;
 }
+
 /*************************************************
 // Name:: SetColor
 // Description: Sets the console
