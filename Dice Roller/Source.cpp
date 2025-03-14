@@ -4,7 +4,7 @@
 // any specified amount of dice with any specified
 // amount of sides
 // Created by: Aditya Pathak
-// Last updated: 3/2/2025
+// Last updated: 3/13/2025
 **************************************************/
 
 #include <iostream>
@@ -78,11 +78,8 @@ int main()
 
 			if (howManyDice > INT16_MAX)
 			{
-				//SetColor(4, 0);
 				string e("ERROR: Dice amount exceeds limit. Max dice amount is: 32,767.");
 				throw e;
-				//cout << "ERROR: Dice ammount exceeds limit. Max dice ammount is: " << INT16_MAX << "\n ***exiting ***" << endl;
-				//SetColor(7, 0);
 			}
 
 			int rollVal = 0;
@@ -91,10 +88,8 @@ int main()
 
 			if (howManyDice == 0 || howManySides == 0)
 			{
-				//SetColor(4, 0);
 				string e("ERROR: Invalid input. Please provide a valid dice roll command.");
 				throw e;
-				//SetColor(7, 0);
 			}
 
 			//Uses mt19937 for better randomization than rand()
